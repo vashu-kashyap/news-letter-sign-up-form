@@ -1,0 +1,281 @@
+/* importinig fonts of google */
+
+@font-face {
+  font-family: "Roboto-bold";
+  src: url(./assets/fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Roboto-regular";
+  src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+
+/* css reseting  rule*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* fonts and color variables  */
+
+:root {
+  --Roboto-regular: "Roboto-regular", sans-serif;
+  --Roboto-bold: "Roboto-bold", sans-serif;
+  --Tomato: hsl(4, 100%, 67%);
+  --DarkSlate-Grey: hsl(234, 29%, 20%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+}
+
+/* frontend mentor default css style */
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+  color: var(--Tomato);
+  margin-bottom: 1rem
+}
+.attribution a {
+  color: var(--White);
+  text-decoration: none;
+  ;
+}
+
+body,main{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--Charcoal-Grey);
+}
+
+h1{
+    font-family: var(--Roboto-bold);
+    color: var(--White);
+    margin-bottom:1rem;
+    font-size: 1.5rem;
+    word-spacing: 5px;
+}
+
+
+/* news letter sign up from started from here  */
+
+
+.sign-up-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--White);
+    border-radius: 30px;
+    padding:30px ;
+    max-width: 900px ;
+    min-height: 575px;
+}
+
+.sign-up-container .sign-up-content{
+    padding: 50px;
+}
+
+.sign-up-container .sign-up-content h2{
+    font-family: var(--Roboto-bold);
+    font-size: 3.5rem;
+    color: var(--DarkSlate-Grey);
+    margin-bottom: 2rem;
+}
+
+
+.sign-up-container .sign-up-content p{
+    font-family: var(--Roboto-regular);
+    font-size: 1rem;
+    color: var(--Charcoal-Grey);
+    margin-bottom: 2rem;
+    
+}
+
+.sign-up-container .sign-up-content .sign-up-advantage-list li{
+    display: flex;
+    justify-content: start;
+    align-items: center; 
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    font-family: var(--Roboto-regular);
+    color: var(--Charcoal-Grey);
+}
+
+.sign-up-container .sign-up-content .sign-up{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.sign-up-container .sign-up-content .sign-up .email-label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.sign-up-container .sign-up-content .sign-up .email-label label{
+    font-family: var(--Roboto-bold);
+    font-size: 1rem;
+    color: var(--Charcoal-Grey);
+}
+
+.sign-up-container .sign-up-content .sign-up .email-label span{
+    font-family: var(--Roboto-regular);
+    font-size: 1rem;
+    color: var(--Tomato);
+}
+
+.sign-up-container .sign-up-content .sign-up .email-success{
+    padding:16px ;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid var(--Grey);
+    color: var(--Charcoal-Grey);
+    margin-bottom: 1rem;
+    font-family: var(--Roboto-bold);
+}
+
+.sign-up-container .sign-up-content .sign-up .email-success::placeholder{
+    color:var(--Grey);
+    font-family: var(--Roboto-regular);
+    font-size: 16px;
+}
+
+
+
+
+
+
+.sign-up-container .sign-up-content .sign-up input[type='submit']{
+    padding:16px ;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid var(--Grey);
+    color: var(--White);
+    margin-bottom: 1rem;
+    background-color: var(--DarkSlate-Grey);
+    font-family: var(--Roboto-bold);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: all 0.3s ease-in-out    ;
+}
+
+.sign-up-container .sign-up-content .sign-up input[type='submit']:active,.sign-up-container .sign-up-content .sign-up input[type='submit']:hover{
+    background-color: var(--Tomato);
+}
+
+
+
+.sign-up-container .sign-up-img{
+    background-image: url(./assets/images/illustration-sign-up-desktop.svg);
+    min-width: 350px;
+    min-height: 500px;
+    border-radius: 15px;
+}
+
+/* news letter sign up from ended from here  */
+
+.success-container{
+    background-color: var(--White);
+    max-width: 400px;
+    padding: 40px ;
+    border-radius: 25px;
+    display: none;
+}
+
+.success-container h3{
+    font-family: var(--Roboto-bold);
+    font-size: 2.5rem;
+    color: var(--DarkSlate-Grey);
+    margin-top: 1rem;
+}
+
+.success-container P{
+    font-family: var(--Roboto-regular);
+    font-size: 0.85rem;
+    color: var(--DarkSlate-Grey);
+    margin-top: 1rem;
+    line-height: 1.25rem;
+}
+
+.success-container button{
+    font-family: var(--Roboto-bold);
+    font-size: 0.93rem;
+    color: var(--White);
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 16px;
+    border-radius: 5px;
+    background-color: var(--DarkSlate-Grey);
+    border: none;
+    transition: all 0.2s ease-in-out;
+    
+}
+
+.success-container button:active,.success-container button:hover{
+    background-color: var(--Tomato);
+}
+
+
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+@media screen and (max-width:375px) {
+    .sign-up-container{
+        flex-direction: column-reverse;
+        justify-content: start;
+    }
+
+    .sign-up-container .sign-up-content{
+        padding: 25px;
+    }
+    .sign-up-container .sign-up-img{
+        background-image: url(./assets/images/illustration-sign-up-mobile.svg);
+        background-repeat: no-repeat;
+        border-radius: 15px;
+        min-height: 250px;
+        
+    }
+
+    .success-container{
+        max-width: 300px;
+    }
+
+    .success-container h3{
+        font-size: 2rem;
+    }
+}
